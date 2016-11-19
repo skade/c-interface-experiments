@@ -2,10 +2,8 @@
 
 int main (int argc, char const *argv[])
 {
-        CoreClient* c = create_ios_client();
+        Core* c = create_ios_client();
         inspect(c);
-        destroy(c);
-        CoreClient* a = create_android_client();
+        Core* a = create_android_client();
         inspect(a);
-        destroy(a);
 }
